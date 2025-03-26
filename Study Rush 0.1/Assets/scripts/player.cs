@@ -12,10 +12,14 @@ public class PlayerController : MonoBehaviour
     private float currentStamina;
     private bool isDashing;
 
+    interact _interact;
+
     private void Start()
     {
         currentStamina = maxStamina;
         UpdateStaminaUI();
+
+        _interact = FindAnyObjectByType<interact>();
     }
 
     private void Update()
@@ -50,6 +54,13 @@ public class PlayerController : MonoBehaviour
         transform.position += moveDirection * currentSpeed * Time.deltaTime;
 
         UpdateStaminaUI();
+
+
+
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            _interact.QuizScene();
+        }
     }
 
     private void UpdateStaminaUI()
@@ -59,4 +70,6 @@ public class PlayerController : MonoBehaviour
             staminaText.text = "Stamina: " + Mathf.Round(currentStamina * 10) / 10;
         }
     }
+
+
 }

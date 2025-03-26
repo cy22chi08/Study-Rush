@@ -1,10 +1,15 @@
 using UnityEngine;
 
-public class CameraControl : MonoBehaviour
+public class cameraControl : MonoBehaviour
 {
     public float sensitivity = 2.0f;
     private float rotationX = 0f;
     private float rotationY = 0f;
+
+    void Start()
+    {
+
+    }
 
     void Update()
     {
