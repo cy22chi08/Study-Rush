@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Quiz.unity
     guid: a7b8007902ebc444ebcc83c3645c5ed4
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: b2ab5668ca6bac241be42036fad91a7b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
