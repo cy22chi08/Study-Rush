@@ -3400,6 +3400,7 @@ MonoBehaviour:
   countdownTime: 10
   resultPanel: {fileID: 913858542}
   resultScoreText: {fileID: 610735301}
+  speedChase: 0
 --- !u!1 &1419627441
 GameObject:
   m_ObjectHideFlags: 0
